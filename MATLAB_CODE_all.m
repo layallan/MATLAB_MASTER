@@ -140,7 +140,7 @@ lgd = legend;
 lgd.FontSize = 14;
 t4=1000/-(ntrap_fit.d);
 t3=1000/-(ntrap_fit.b);
-tau = min(abs(t3),abs(t4))
+tau = min(t3,t4)
 
 function y = my_sd(signal, windowlength, overlap, zeropad)
 delta = windowlength - overlap;
